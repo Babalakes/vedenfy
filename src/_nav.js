@@ -12,6 +12,10 @@ import {
   cilPuzzle,
   cilSpeedometer,
   cilStar,
+  cilPeople,
+  cilVoiceOverRecord,
+  cilApplications,
+  cilCash,
 } from '@coreui/icons'
 import { CNavGroup, CNavItem, CNavTitle } from '@coreui/react'
 
@@ -39,26 +43,87 @@ const _nav = [
   {
     component: CNavGroup,
     name: 'Customers',
-    to: '/buttons',
-    icon: <CIcon icon={cilCursor} customClassName="nav-icon" />,
+    to: '/customers',
+    icon: <CIcon icon={cilPeople} customClassName="nav-icon" />,
     items: [
       {
         component: CNavItem,
-        name: 'Buttons',
-        to: '/buttons/buttons',
+        name: 'All Users',
+        to: '/customers/allusers',
       },
       {
         component: CNavItem,
-        name: 'Buttons groups',
-        to: '/buttons/button-groups',
+        name: 'Approved Customers',
+        to: '/customers/approvedusers',
       },
       {
         component: CNavItem,
-        name: 'Dropdowns',
-        to: '/buttons/dropdowns',
+        name: 'Pending Review',
+        to: '/customers/pendingreview',
+      },
+      {
+        component: CNavItem,
+        name: 'Rejected Customers',
+        to: '/customers/rejected',
       },
     ],
   },
+  {
+    component: CNavItem,
+    name: 'Report',
+    to: '/report',
+    icon: <CIcon icon={cilChartPie} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavGroup,
+    name: 'Tools',
+    to: '/tools',
+    icon: <CIcon icon={cilApplications} customClassName="nav-icon" />,
+    items: [
+      {
+        component: CNavItem,
+        name: 'Identity Verification',
+        to: '/tools/identityverify',
+      },
+      {
+        component: CNavItem,
+        name: 'Credit Score Check',
+        to: '/tools/creditscore',
+      },
+    ],
+  },
+
+  {
+    component: CNavGroup,
+    name: 'Wallet',
+    to: '/wallet',
+    icon: <CIcon icon={cilCash} customClassName="nav-icon" />,
+    items: [
+      {
+        component: CNavItem,
+        name: 'Fund',
+        to: '/wallet/fund',
+      },
+      {
+        component: CNavItem,
+        name: 'Withdraw',
+        to: '/wallet/withdraw',
+      },
+      {
+        component: CNavItem,
+        name: 'History',
+        to: '/customers/pendingreview',
+      },
+    ],
+  },
+
+  {
+    component: CNavItem,
+    name: 'Support Service',
+    to: '/theme/colors',
+    icon: <CIcon icon={cilVoiceOverRecord} customClassName="nav-icon" />,
+  },
+
   {
     component: CNavTitle,
     name: 'Theme',

@@ -2,12 +2,12 @@ import React from 'react'
 
 import { CCard, CCardBody, CRow } from '@coreui/react'
 
-const Customers = () => {
+const Support = () => {
   return (
     <>
       <CCard className="mb-4">
         <CCardBody>
-          <h3>Customers</h3>
+          <h3>Support</h3>
           <CRow></CRow>
         </CCardBody>
       </CCard>
@@ -15,4 +15,4 @@ const Customers = () => {
   )
 }
 
-export default Customers
+export default Support

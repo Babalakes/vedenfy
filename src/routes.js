@@ -2,6 +2,16 @@ import React from 'react'
 
 const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'))
 const Starter = React.lazy(() => import('./views/starter/Starter'))
+const allUsers = React.lazy(() => import('./views/customers/allusers/allUsers'))
+const approvedUsers = React.lazy(() => import('./views/customers/approvedusers/approvedUsers'))
+const pendingReview = React.lazy(() => import('./views/customers/pendingreview/pendingReview'))
+const Rejected = React.lazy(() => import('./views/customers/rejected/Rejected'))
+const Report = React.lazy(() => import('./views/report/Report'))
+const IdentityVerify = React.lazy(() => import('./views/tools/identityverify/IdentityVerify'))
+const CreditScore = React.lazy(() => import('./views/tools/creditscore/CreditScore'))
+const Fund = React.lazy(() => import('./views/wallet/fund/Fund'))
+const Withdraw = React.lazy(() => import('./views/wallet/withdraw/Withdraw'))
+
 const Colors = React.lazy(() => import('./views/theme/colors/Colors'))
 const Typography = React.lazy(() => import('./views/theme/typography/Typography'))
 
@@ -55,6 +65,15 @@ const routes = [
   { path: '/', exact: true, name: 'Home' },
   { path: '/dashboard', name: 'Dashboard', element: Dashboard },
   { path: '/starter', name: 'Starter', element: Starter },
+  { path: '/customers/allusers', name: 'All Users', element: allUsers },
+  { path: '/customers/approvedusers', name: 'Approved Customers', element: approvedUsers },
+  { path: '/customers/pendingreview', name: 'Pending Review', element: pendingReview },
+  { path: '/customers/rejected', name: 'Rejected Customers', element: Rejected },
+  { path: '/report', name: 'Report', element: Report },
+  { path: '/tools/identityverify', name: 'Verify Identity', element: IdentityVerify },
+  { path: '/tools/creditscore', name: 'Credit Score Check', element: CreditScore },
+  { path: '/wallet/fund', name: 'Fund', element: Fund },
+  { path: '/wallet/withdraw', name: 'Withdraw', element: Withdraw },
   { path: '/theme', name: 'Theme', element: Colors, exact: true },
   { path: '/theme/colors', name: 'Colors', element: Colors },
   { path: '/theme/typography', name: 'Typography', element: Typography },
