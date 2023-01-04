@@ -32,7 +32,7 @@ const Withdraw = () => {
           footer={
             <CLink
               className="font-weight-bold font-xs text-medium-emphasis"
-              href="https://coreui.io/"
+              href="#/wallet/history"
               rel="noopener norefferer"
               target="_blank"
             >
@@ -52,7 +52,7 @@ const Withdraw = () => {
           footer={
             <CLink
               className="font-weight-bold font-xs text-medium-emphasis"
-              href="https://coreui.io/"
+              href="#/wallet/history"
               rel="noopener norefferer"
               target="_blank"
             >
@@ -72,7 +72,7 @@ const Withdraw = () => {
           footer={
             <CLink
               className="font-weight-bold font-xs text-medium-emphasis"
-              href="https://coreui.io/"
+              href="#/wallet/history"
               rel="noopener norefferer"
               target="_blank"
             >
@@ -92,7 +92,7 @@ const Withdraw = () => {
           footer={
             <CLink
               className="font-weight-bold font-xs text-medium-emphasis"
-              href="https://coreui.io/"
+              href="#/wallet/history"
               rel="noopener norefferer"
               target="_blank"
             >
